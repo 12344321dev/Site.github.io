@@ -3,7 +3,7 @@
     color: #fff; /* Цвет текста */
    }
 
-.sliding-button {
+.Downuload {
   text-decoration: none;
   color: white;
   display: inline-block;
@@ -12,14 +12,14 @@
   border: 1px solid;
   border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
   border-image-slice: 1;
-  margin: 25% 45%;
+  margin: 0px 820px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   overflow: hidden;
   letter-spacing: 2px;
   transition: .8s cubic-bezier(.165, .84, .44, 1);
 }
-.sliding-button:before {
+.Downuload:before {
   content: "";
   position: absolute;
   left: 0;
@@ -31,11 +31,46 @@
   background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
   transition: .8s cubic-bezier(.165, .84, .44, 1);
 }
-.sliding-button:hover {
+.Downuload:hover {
   background: rgba(255, 255, 255, 0);
 }
-.sliding-button:hover:before {
+.Downuload:hover:before {
   bottom: 0%;
   top: auto;
   height: 100%;
+}
+
+.text {
+  margin: 250px 800px;
+}
+
+.scripts {
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 5px 10px;
+  overflow: hidden;
+  border: 2px solid;
+  border-bottom-width: 4px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgba(128, 128, 128, 1);
+  background: rgba(255, 255, 255, 1);
+  transition: color .3s, background .5s;
+}
+.scripts:hover {
+  animation: stripes .75s infinite linear;
+  background: linear-gradient(45deg, rgba(128, 128, 128, 1) 25%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 50%, rgba(128, 128, 128, 1) 50%, rgba(128, 128, 128, 1) 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1));
+  background-size: 10px 10px;
+  color: #808080;
+}
+@keyframes stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 0;
+  }
 }
