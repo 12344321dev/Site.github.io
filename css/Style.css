@@ -41,13 +41,13 @@
 }
 
 .text {
-  margin: 250px 800px;
+  margin: 250px 780px;
 }
 
 .scripts {
   text-decoration: none;
   display: inline-block;
-  margin: 5px 10px;
+  margin: 0px 5px;
   padding: 5px 10px;
   overflow: hidden;
   border: 2px solid;
